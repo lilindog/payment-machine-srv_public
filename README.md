@@ -51,7 +51,7 @@ payment-machine-srv_public
 ```
 
 ## 开发
-!需要先将配置好的支付宝api公私钥对的私钥放在该项目的根目录。  
+!!!需要先将配置好的支付宝api公私钥对的私钥放在该项目的根目录。  
 老规矩，先`npm install `安装依赖.   
 * 开发运行 `npm run dev`
 * 生成文档 `npm run doc`
