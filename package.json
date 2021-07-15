@@ -1,0 +1,35 @@
+{
+  "name": "nwjs-project-srv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "preinstall": "node scripts/init-githooks.js",
+    "lint": "eslint --ext .js,.mjs src/",
+    "doc": "apidoc -i src/routers -o doc",
+    "dev": "nodemon --ignore doc src/app.mjs"
+  },
+  "keywords": [],
+  "author": "lilindog<lilin@lilin.site>",
+  "license": "UNLICENSE",
+  "devDependencies": {
+    "apidoc": "^0.28.1",
+    "chalk": "^4.1.0",
+    "eslint": "^7.24.0",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "alipay-sdk": "^3.1.6",
+    "big.js": "^6.1.1",
+    "captcha": "git+https://github.com/lilindog/captcha.git",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.0.0",
+    "koa-send": "^5.0.1",
+    "log4js": "^6.3.0",
+    "multiparty": "^4.2.2",
+    "mysql2": "^2.2.5",
+    "parseenv": "git+https://github.com/lilindog/parseenv.git"
+  }
+}
