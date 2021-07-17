@@ -11,7 +11,9 @@ create table if not exists user (
     pass char(50) DEFAULT "admin" COMMENT "密码，这里存明文",
     summary text COMMENT "简介"
 ) engine = InnoDB default charset = utf8;
+lock table user;
 insert into user (name) values ("admin");
+unlock tables;
 
 # 商品表，这里没有分类，就几个简单的字段。
 drop table if exists product;
