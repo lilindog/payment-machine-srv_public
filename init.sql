@@ -11,7 +11,7 @@ create table if not exists user (
     pass char(50) DEFAULT "admin" COMMENT "密码，这里存明文",
     summary text COMMENT "简介"
 ) engine = InnoDB default charset = utf8;
-lock table user;
+lock table user write;
 insert into user (name) values ("admin");
 unlock tables;
 
